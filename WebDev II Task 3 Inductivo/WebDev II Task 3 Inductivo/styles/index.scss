@@ -1,0 +1,173 @@
+/*Imports separate files for specified code blocks.*/
+@import './variables'; 
+@import './mediaqueries';
+@import './center';
+
+html, body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 95%;
+    background-color: $bg_color;
+}
+
+.page-wrap {
+    min-height: 100%;
+    box-sizing: border-box;
+}
+
+.page-wrap:after {
+    content: "";
+    display: block;
+}
+
+header{
+    @include center(); /*Places content in the center*/
+    background-color: $light_blue;
+
+    /*Swaps images to different size when page reaches a specified breakpoint.*/
+    @include devices(laptop){
+        .image1{
+            display: block;
+        }
+
+        .image2{
+            display: none;
+        }
+
+        .image3{
+            display: none;
+        }
+    }
+
+    @include devices(tablet){
+        .image1{
+            display: none;
+        }
+
+        .image2{
+            display: block;
+        }
+
+        .image3{
+            display: none;
+        }
+    }
+
+    @include devices(mobile){
+        .image1{
+            display: none;
+        }
+
+        .image2{
+            display: none;
+        }
+
+        .image3{
+            display: block;
+        }
+    }
+}
+
+/*Start of rows container section.*/
+.container.rows{
+    margin-top: 60px;
+
+    .row1{
+        height: 50px;
+        background-color: $navy_blue;
+        &:hover{
+            background-color: $hover_color;
+        }
+    }
+    
+    .row2{
+        height: 50px;
+        background-color: $dark_blue;
+        &:hover{
+            background-color: $hover_color;
+        }
+    }
+    
+    .row3{
+        height: 50px;
+        background-color: $light_red;
+        &:hover{
+            background-color: $hover_color;
+        }
+    }
+    
+    .row4{
+        height: 50px;
+        background-color: $peach_orange;
+        &:hover{
+            background-color: $hover_color;
+        }
+    }
+}
+/*End of rows container section.*/
+
+/*Start of circles container section.*/
+.container.circles{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    @include center();
+    @include col();
+
+    .circle{
+        margin: 5px 5px;
+    }
+
+    .circle1{
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        background-color: $navy_blue;
+        &:hover{
+            background-color: $hover_color;
+        }
+    }
+    
+    .circle2{
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        background-color: $dark_blue;
+        &:hover{
+            background-color: $hover_color;
+        }
+    }
+    
+    .circle3{
+        height: 90px;
+        width: 90px;
+        border-radius: 50%;
+        background-color: $light_red;
+        &:hover{
+            background-color: $hover_color;
+        }
+    }
+    
+    .circle4{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-color: $peach_orange;
+        &:hover{
+            background-color: $hover_color;
+        }
+    }
+}
+/*End of circles container section.*/
+
+/*Footer section*/
+footer{
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: $light_blue;
+}

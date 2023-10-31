@@ -1,0 +1,152 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: 95%;
+  background-color: #e2eff1;
+}
+
+.page-wrap {
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8ccff7;
+}
+@media (min-width: 801px) {
+  header .image1 {
+    display: block;
+  }
+  header .image2 {
+    display: none;
+  }
+  header .image3 {
+    display: none;
+  }
+}
+@media (min-width: 481px) and (max-width: 800px) {
+  header .image1 {
+    display: none;
+  }
+  header .image2 {
+    display: block;
+  }
+  header .image3 {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  header .image1 {
+    display: none;
+  }
+  header .image2 {
+    display: none;
+  }
+  header .image3 {
+    display: block;
+  }
+}
+
+.container.rows {
+  margin-top: 60px;
+}
+.container.rows .row1 {
+  height: 50px;
+  background-color: #4e89ae;
+}
+.container.rows .row1:hover {
+  background-color: #444;
+}
+.container.rows .row2 {
+  height: 50px;
+  background-color: #43658b;
+}
+.container.rows .row2:hover {
+  background-color: #444;
+}
+.container.rows .row3 {
+  height: 50px;
+  background-color: #ed6663;
+}
+.container.rows .row3:hover {
+  background-color: #444;
+}
+.container.rows .row4 {
+  height: 50px;
+  background-color: #ffa372;
+}
+.container.rows .row4:hover {
+  background-color: #444;
+}
+
+.container.circles {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 621px) {
+  .container.circles {
+    flex-direction: column;
+  }
+}
+.container.circles .circle {
+  margin: 5px 5px;
+}
+.container.circles .circle1 {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: #4e89ae;
+}
+.container.circles .circle1:hover {
+  background-color: #444;
+}
+.container.circles .circle2 {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: #43658b;
+}
+.container.circles .circle2:hover {
+  background-color: #444;
+}
+.container.circles .circle3 {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  background-color: #ed6663;
+}
+.container.circles .circle3:hover {
+  background-color: #444;
+}
+.container.circles .circle4 {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #ffa372;
+}
+.container.circles .circle4:hover {
+  background-color: #444;
+}
+
+footer {
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-height: 50px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #8ccff7;
+}/*# sourceMappingURL=index.css.map */
