@@ -71,7 +71,7 @@ input[type="checkbox"]{
 /*Start of main content section*/
 .container{
     display: grid;
-    grid-template-columns: 32% 30%;
+    grid-template-columns: 36% 34%;
     gap: 15px;
     margin-top: 15px;
     justify-content: center;
@@ -117,13 +117,13 @@ p{
 .box4 a,
 .box5 a{
     background-color: #1E90FF;
-    padding: 10px;
-    float: right;
     border-radius: 3px;
     text-decoration: none;
     color: white;
     font-size: 17px;
     margin-top: 15px;
+    padding: 10px;
+    float: right;
 }
 
 .box1h2{
@@ -135,8 +135,16 @@ p{
     padding-right: 15px;
 }
 
-.box1a{
+.box1 a{
     margin-right: 15px;
+}
+
+.box3 a{
+    margin-top: 40px;
+}
+
+.box4 a{
+    margin-top: 35px;
 }
 /*End of main content section*/
 
@@ -230,6 +238,14 @@ footer p{
         display: grid;
         gap: 15px;
         grid-template-columns: auto auto;
+    }
+
+    .box3 a{
+        margin-top: 65px;
+    }
+
+    .box5 a{
+        margin-top: 63px;
     }
 }
 
