@@ -273,6 +273,20 @@ footer p{
         margin-top: 20px;
     }
 
+    .container2{
+        display: grid;
+        gap: 15px;
+        grid-template-columns: auto auto;
+    }
+
+    .box2 a{
+        margin-top: 40px;
+    }
+
+    .box4 a{
+        margin-top: 60px;
+    }
+
 }
 
 @media (max-width: 481px){ /*Media query for viewport width of below 481px*/
