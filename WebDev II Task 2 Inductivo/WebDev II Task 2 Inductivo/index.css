@@ -158,7 +158,7 @@ footer p{
 /*End of footer section*/
 
 /*Start of media queries section*/
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px){  /*Media query for responsive navbar*/
     .navbar{
         display: block;
         padding: 0;
@@ -228,7 +228,7 @@ footer p{
     }
 }
 
-@media (max-width: 1281px){
+@media (max-width: 1281px){ /*Media query for viewport width of below 1281px*/
     .container{
         display: grid;
         grid-template-columns: 52% 42%;
@@ -249,7 +249,7 @@ footer p{
     }
 }
 
-@media (max-width: 1025px){
+@media (max-width: 1025px){ /*Media query for viewport width of below 1025px*/
     .container{
         display: grid;
         grid-template-columns: 62% 32%;
@@ -264,7 +264,7 @@ footer p{
 
 
 
-@media (max-width: 801px){
+@media (max-width: 801px){ /*Media query for viewport width of below 801px*/
     .container{
         display: flex;
         flex-direction: column;
@@ -275,7 +275,7 @@ footer p{
 
 }
 
-@media (max-width: 481px){
+@media (max-width: 481px){ /*Media query for viewport width of below 481px*/
     .container{
         display: flex;
         flex-direction: column;
@@ -298,7 +298,4 @@ footer p{
     }
     
 }
-
-
-
 /*End of media queries section*/

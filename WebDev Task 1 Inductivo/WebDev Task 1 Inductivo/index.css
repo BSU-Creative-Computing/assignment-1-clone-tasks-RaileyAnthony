@@ -31,7 +31,7 @@ footer{
 /*End of footer section*/
 
 /*Start of media queries section*/
-@media (max-width: 480px){
+@media (max-width: 480px){ /*Media query for viewport width of below 480px*/
     p{
         font-size: 18px;
         line-height: 30px;
@@ -51,7 +51,7 @@ footer{
 }
 
 
-@media (min-width: 481px){
+@media (min-width: 481px){ /*Media query for viewport width of above 481px*/
     p{
         font-size: 20px;
         line-height: 30px;
@@ -70,7 +70,7 @@ footer{
     }
 }
 
-@media (min-width: 800px){
+@media (min-width: 800px){ /*Media query for viewport width of above 800px*/
     .cover{
         width: 50%;
     }
@@ -80,7 +80,7 @@ footer{
     }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1024px){ /*Media query for viewport width of above 1024px*/
     .cover{
         width: 33.333%;
     }
@@ -91,7 +91,7 @@ footer{
     }
 }
 
-@media (min-width: 1025px){
+@media (min-width: 1025px){ /*Media query for viewport width of above 1025px*/
     p{
         font-size: 20px;
         line-height: 40px;
