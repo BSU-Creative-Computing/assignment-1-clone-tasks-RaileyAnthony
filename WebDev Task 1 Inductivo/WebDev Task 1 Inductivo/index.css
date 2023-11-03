@@ -2,19 +2,35 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: rgb(226, 225, 225);
 }
 
 .container{
     display: grid;
+    width: 70%;
+    margin: 0 auto;
+    background-color: white;
 }
 
 p{
     padding-left: 30px;
     padding-right: 30px;
+    font-size: 20px;
+    line-height: 40px;
 }
 
 .gallery img {
     width: 100%;
+}
+
+.logo{
+    height: 70px;
+    padding: 15px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 /*Start of footer section*/
@@ -31,89 +47,32 @@ footer{
 /*End of footer section*/
 
 /*Start of media queries section*/
-@media (max-width: 480px){ /*Media query for viewport width of below 480px*/
-    p{
-        font-size: 18px;
-        line-height: 30px;
-    }
-    .logo{
-        height: 50px;
-        padding: 15px
-    }
-    .cover{
-        width: 100%;
-        float: left;
-    }
 
-    .gallery img {
-        display: block;
+@media (max-width: 1025px){ /*Media query for viewport width of below 1025px*/
+    .container{
+        width: 100%;
     }
 }
 
-
-@media (min-width: 481px){ /*Media query for viewport width of above 481px*/
-    p{
-        font-size: 20px;
-        line-height: 30px;
+@media (max-width: 801px){ /*Media query for viewport width of below 801px*/
+    .cover{
+        width: 50%;
     }
+
     .logo{
         height: 50px;
-        padding: 15px
     }
-    .cover{
-        width: 100%;
-        float: left;
-    }
+
     .gallery {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (min-width: 800px){ /*Media query for viewport width of above 800px*/
-    .cover{
-        width: 50%;
-    }
-
-    .logo{
-        height: 70px;
-    }
-}
-
-@media (min-width: 1024px){ /*Media query for viewport width of above 1024px*/
-    .cover{
-        width: 33.333%;
-    }
-
+@media (max-width: 481px){ /*Media query for viewport width of below 481px*/
     .gallery {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (min-width: 1025px){ /*Media query for viewport width of above 1025px*/
-    p{
-        font-size: 20px;
-        line-height: 40px;
-    }
-
-    .container{
-        width: 70%;
-        margin: 0 auto;
-        background-color: white;
-    }
-
-    .logo{
-        height: 70px;
-    }
-    
-    body{
-        background-color: rgb(226, 225, 225);
-    }
-
-    .gallery {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 /*End of media queries section*/
