@@ -5,6 +5,7 @@ body{
     background-color: rgb(226, 225, 225);
 }
 
+/*Start of main content section*/
 .container{
     display: grid;
     width: 70%;
@@ -32,6 +33,7 @@ p{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
+/*End of main content section*/
 
 /*Start of footer section*/
 footer{
